@@ -14,9 +14,11 @@ node('master') {
       // ** NOTE: This 'maven3' maven tool must be configured
       // **       in the global configuration.
      // def mvnHome = tool 'Grdale4'
+      def grdHome = tool 'gradle4'
       // Run the maven build
-     // sh "${mvnHome}/bin/mvn clean install"
+      sh "${grdHome}/bin/gradle clean install"
      //sh 'gradle build'
+      
      sh 'gradle build --info'
    }
 }
