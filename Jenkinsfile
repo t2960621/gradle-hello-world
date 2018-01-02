@@ -18,7 +18,7 @@ node('master') {
      // sh "${grdHome}/bin/gradle clean install"
      //sh 'gradle build'
       
-     sh "${grdHome}/bin/gradle build --info"
+     sh "${grdHome}/bin/gradle clean jar"
    }
 }
 
