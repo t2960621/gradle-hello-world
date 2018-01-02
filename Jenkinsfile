@@ -15,7 +15,7 @@ node('master') {
       // **       in the global configuration.
       def grdHome = tool 'gradle4'
       // Run the maven build
-      sh "${grdHome}/bin/gradle clean install"
+     // sh "${grdHome}/bin/gradle clean install"
      //sh 'gradle build'
       
      sh '${grdHome}/bin/gradle build --info'
