@@ -16,7 +16,7 @@ node('master') {
      // def mvnHome = tool 'Grdale4'
       def grdHome = tool 'gradle4'
       // Run the maven build
-      sh "${grdHome}/bin/gradle clean install"
+      //sh "${grdHome}/bin/gradle clean install"
      //sh 'gradle build'
       
      sh 'gradle build --info'
