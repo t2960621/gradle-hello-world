@@ -1,5 +1,5 @@
 #!groovy
-node('slave') {
+node('slave1') {
    // Mark the code checkout 'stage'....
    stage ('Checkout'){
 
