@@ -16,7 +16,8 @@ node('slave1') {
      // def mvnHome = tool 'Grdale4'
       // Run the maven build
      // sh "${mvnHome}/bin/mvn clean install"
-     sh "gradle build"
+     //sh 'gradle build'
+     sh 'gradle build --info'
    }
 }
 
